@@ -96,3 +96,30 @@ button {
     justify-content: left;
     font-size: 25px;
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+        align-items: center;
+    }
+
+    .column {
+        width: 100%; /* Full width for columns on small screens */
+        margin: 10px 0;
+    }
+
+    textarea {
+        width: 90%; /* Wider textareas on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        font-size: 14px; /* Slightly smaller font for buttons on very small screens */
+        padding: 15px 30px; /* Adjust button padding */
+    }
+
+    .result {
+        font-size: 20px; /* Reduce font size for results */
+    }
+}
